@@ -3,7 +3,7 @@
 class Settings(object):
     fComparator = None
 
-def sort(aInput, bIterative=False, bConcurrent=False, fComparator=lambda x,y: x <= y):
+def sort(aInput, fComparator=lambda x,y: x <= y):
     Settings.fComparator = fComparator
     return quicksort(aArr=aInput, iLo=0, iHi=len(aInput) - 1)
 
